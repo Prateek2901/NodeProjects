@@ -1,0 +1,39 @@
+.jumbotron {
+  background :url(../images/bg.png) center center no-repeat ;
+ width: 100%;
+ 	filter: opacity(70%);
+ 	font-weight: initial;
+ 	color: black !important;
+}
+.jumbotron>.container
+{
+	padding-left: 15vh;
+	padding-right: 15vh;
+
+}
+
+body {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+footer
+{
+	background: #f4f4f4;
+	height: 40px;
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 10px;
+	overflow: auto;
+	color: white;
+}
+
+.btn-outline-secondary
+{
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-left: 1vh;
+}
+
+img{
+margin-right: 2vh;
+}

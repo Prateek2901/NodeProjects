@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title #{title}: Express Website
+    meta( charset='utf-8' )
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='shortcut icon', href='images/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='images/favicon.ico', type='image/x-icon')
+  body
+    nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse.fixed-top
+        .container
+            .navbar-header
+            
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                a.navbar-brand(href='#')
+                    img(src='/images/logo.png' width="30" height="30" class="d-inline-block align-top" alt="express_logo")
+                    Website Express Website
+        #navbarsExampleDefault.collapse.navbar-collapse
+            ul.nav.navbar-nav.mr-auto.navbar-right
+                li.nav-item.active
+                    a.nav-link(href='#').btn.btn-outline-secondary
+                        | Home 
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='/about').btn.btn-outline-secondary About Us
+                li.nav-item
+                    a.nav-link(href='/contact').btn.btn-outline-secondary Contacts
+            form.form-inline.my-2.my-lg-0
+              input.form-control.mr-sm-2(type='text', placeholder='Search')
+              button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+
+
+
+    
+    block content
+    footer
+        nav.navbar.navbar-inverse.bg-inverse.fixed-bottom
+            p(style="color:white") &copy; 2017, Happy Coding
+
+    
+    script(src='/javascripts/jquery-3.1.1.slim.min.js')
+    script(src='/javascripts/tether.min.js')     
+    script(src='/javascripts/bootstrap.min.js')
